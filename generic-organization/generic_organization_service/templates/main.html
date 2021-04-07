@@ -338,10 +338,10 @@
                 var formFooterStatus = true;
                 function onDizmeAuth(res) {
                     console.log(res);
-                    //alert('Result of login ' + res.proof_status);
-                    if (res.proof_status === "SUCCESS") {
-                    } else if (res.proof_status === "FAILURE") {
-                    } else if (res.proof_status === "ABORTED") {
+                    //alert('Result of login ' + res.transaction_status);
+                    if (res.transaction_status === "SUCCESS") {
+                    } else if (res.transaction_status === "FAILURE") {
+                    } else if (res.transaction_status === "ABORTED") {
                         setTimeout(function(){
                             window.history.back();
                         },1500);
